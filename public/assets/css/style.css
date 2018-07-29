@@ -57,3 +57,50 @@ hr{
   border-radius:50%;
   margin-left:calc(50% - 100px);
 }
+/*pagina de inicio*/
+h1{
+  padding:40PX;
+  padding-bottom:40;
+}
+.divrecepcion{
+  padding:40px;
+  padding-top:40px;
+  padding-bottom:40px;
+  padding-right:70px;
+  padding-left:70px;
+}
+.btnrecepcion{
+  background-color:#222222;
+  width:100%;
+  max-height:85px;
+  min-height:0px;
+  height:99px;
+  color:#ffffff;
+}
+.divoficina{
+  padding:40px;
+  padding-top:40px;
+  padding-bottom:40px;
+  padding-right:70px;
+  padding-left:70px;
+}
+.btnoficina{
+  background-color:#222222;
+  width:100%;
+  max-height:85px;
+  min-height:0px;
+  height:99px;
+}
+.divadministracion{
+  padding:40px;
+  padding-top:40px;
+  padding-bottom:40px;
+  padding-right:70px;
+  padding-left:70px;
+}
+.btnadministracion{
+  background-color:#222222;
+  width:100%;
+  max-height:85px;
+  height:99px;
+}
