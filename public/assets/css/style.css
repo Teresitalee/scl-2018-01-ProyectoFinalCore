@@ -8,7 +8,7 @@
 .no-marging{
   margin:0;
 }
-.alert-col>.alert.display{
+.alert-col .alert.display{
   opacity:1
 }
 .container.profile{
