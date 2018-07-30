@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LOG</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Register</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/styles.min.css?h=ba2843fa1bdbb48df8d7cdf2906b1128">
-  <link rel="stylesheet" href="../public/assets/css/style.css">
-</head>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.3.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.3.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.3.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.3.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.3.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.2.0/firebaseui.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- link script boostrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.min.js?h=a956092e47060f3a4df307fed239128f"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.2.0/firebaseui.css" />
+    <!-- link css bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link css propio -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+  </head>
+  <body>
+    <div id="firebaseui-auth-container"></div>
+    <div id="userData"></div>
 
-<body>
   <!-- seccion donde debe ir pagina splash -->
   <section id="splash">
-      <div id="ldiv" class="loadingdiv">
-          <h1 class="text-center justify-content-center align-items-center align-content-center align-self-center align-content-md-center" style="color:rgb(249,251,254);margin-top:90px;font-family:'Amatic SC', cursive;font-style:normal;font-size:60px;">Bienvenido</h1>
-          <p class="text-center justify-content-center align-items-center align-content-center align-self-center align-content-md-center align-self-md-center" style="color:rgb(249,250,251);">IF BLANCO</p><img src="assets/img/loader.gif?h=74ea9088d963ae4fb06b99f5653dac68" class="loadingdivimg">
-          <h3 class="text-center align-items-center align-content-center mb-auto" style="color:rgb(247,248,249);font-family:Allan, cursive;margin-top:290px;">Cargando....</h3>
-      </div>
 
   </section>
   <!-- seccion donde debe ir pagina de inicio(botones de Administrador/Recepcion/Empresa) -->
@@ -193,24 +208,5 @@
         </div>
       </div>
     </div>
-  </section>
-  <!-- Bootstrap -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/script.min.js?h=a956092e47060f3a4df307fed239128f"></script>
-  <!-- update the version number as needed -->
-  <script defer src="/__/firebase/5.3.0/firebase-app.js"></script>
-  <!-- include only the Firebase features as you need -->
-  <script defer src="/__/firebase/5.3.0/firebase-auth.js"></script>
-  <script defer src="/__/firebase/5.3.0/firebase-database.js"></script>
-  <script defer src="/__/firebase/5.3.0/firebase-messaging.js"></script>
-  <script defer src="/__/firebase/5.3.0/firebase-storage.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
-  <!-- JS -->
-  <script src="assets/js/ administrator.js"></script>
-  <script src="assets/js/ admission.js"></script>
-  <script src="assets/js/register.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
