@@ -5,9 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
   firebase.auth().onAuthStateChanged((user)=> {
     if (user) {
       console.log(user);
-      document.getElementById('userData').innerHTML='Hola' + user.displayName + '<a href="#" onClick="firebase.auth().signOut()">Cerrar Sesion</a>';
+      document.getElementById('userData').innerHTML='Hola' + user.displayName + '<a href="#" onClick="signOut()">Cerrar Sesion</a>';
     }else{
       document.getElementById('userData').innerHTML='';// para limpiar al deslogearse
+      login();
     }
   });
 } catch (e) {

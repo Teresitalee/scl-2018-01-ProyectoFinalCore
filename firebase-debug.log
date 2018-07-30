@@ -1,41 +1,41 @@
-[debug] [2018-07-30T21:40:44.157Z] ----------------------------------------------------------------------
-[debug] [2018-07-30T21:40:44.173Z] Command:       /home/leslie/.nvm/versions/node/v8.11.3/bin/node /home/leslie/.nvm/versions/node/v8.11.3/bin/firebase serve
-[debug] [2018-07-30T21:40:44.174Z] CLI Version:   4.0.0
-[debug] [2018-07-30T21:40:44.174Z] Platform:      linux
-[debug] [2018-07-30T21:40:44.174Z] Node Version:  v8.11.3
-[debug] [2018-07-30T21:40:44.174Z] Time:          Mon Jul 30 2018 17:40:44 GMT-0400 (-04)
-[debug] [2018-07-30T21:40:44.174Z] ----------------------------------------------------------------------
+[debug] [2018-07-30T22:27:06.137Z] ----------------------------------------------------------------------
+[debug] [2018-07-30T22:27:06.143Z] Command:       /home/leslie/.nvm/versions/node/v8.11.3/bin/node /home/leslie/.nvm/versions/node/v8.11.3/bin/firebase serve
+[debug] [2018-07-30T22:27:06.144Z] CLI Version:   4.0.0
+[debug] [2018-07-30T22:27:06.144Z] Platform:      linux
+[debug] [2018-07-30T22:27:06.144Z] Node Version:  v8.11.3
+[debug] [2018-07-30T22:27:06.144Z] Time:          Mon Jul 30 2018 18:27:06 GMT-0400 (-04)
+[debug] [2018-07-30T22:27:06.144Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-07-30T21:40:44.199Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-07-30T21:40:44.200Z] > authorizing via signed-in user
-[debug] [2018-07-30T21:40:44.207Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-07-30T21:40:44.208Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2018-07-30T22:27:06.168Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-30T22:27:06.169Z] > authorizing via signed-in user
+[debug] [2018-07-30T22:27:06.175Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-07-30T22:27:06.176Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  { refresh_token: '1/1bwFTCgh5siK2lipHy7KWCquhOV7NQuHDJXQ8iLMOHY',
   client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
   client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
   grant_type: 'refresh_token',
   scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Mon Jul 30 2018 17:40:44 GMT-0400 (-04)
-[debug] [2018-07-30T21:40:44.839Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-30T21:40:44.871Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/registro-de-usuario-d5489  
+ Mon Jul 30 2018 18:27:06 GMT-0400 (-04)
+[debug] [2018-07-30T22:27:06.835Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T22:27:06.877Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/registro-de-usuario-d5489  
   
- Mon Jul 30 2018 17:40:44 GMT-0400 (-04)
-[debug] [2018-07-30T21:40:46.563Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-30T21:40:46.566Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/registro-de-usuario-d5489/tokens  
+ Mon Jul 30 2018 18:27:06 GMT-0400 (-04)
+[debug] [2018-07-30T22:27:08.704Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T22:27:08.707Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/registro-de-usuario-d5489/tokens  
   
- Mon Jul 30 2018 17:40:46 GMT-0400 (-04)
-[debug] [2018-07-30T21:40:47.438Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-30T21:40:47.445Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/registro-de-usuario-d5489  
+ Mon Jul 30 2018 18:27:08 GMT-0400 (-04)
+[debug] [2018-07-30T22:27:09.782Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-30T22:27:09.789Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/registro-de-usuario-d5489  
   
- Mon Jul 30 2018 17:40:47 GMT-0400 (-04)
-[debug] [2018-07-30T21:40:48.916Z] <<< HTTP RESPONSE 200
+ Mon Jul 30 2018 18:27:09 GMT-0400 (-04)
+[debug] [2018-07-30T22:27:11.012Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/home/leslie/Laboratoria/proyectos/scl-2018-01-ProyectoFinalCore'...
 [info] 
-[debug] [2018-07-30T21:40:48.923Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/396909058160/clients/_:getWebAppConfig  
+[debug] [2018-07-30T22:27:11.023Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/396909058160/clients/_:getWebAppConfig  
   
- Mon Jul 30 2018 17:40:48 GMT-0400 (-04)
-[debug] [2018-07-30T21:40:49.735Z] <<< HTTP RESPONSE 200
+ Mon Jul 30 2018 18:27:11 GMT-0400 (-04)
+[debug] [2018-07-30T22:27:11.624Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
 
