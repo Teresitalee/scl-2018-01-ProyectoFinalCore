@@ -1,32 +1,21 @@
 //regista las visitas
-
-window.register = ()=>{
+const progessRegister = () => {
   const currentUser = firebase.auth().currentUser;
-  const name = name.value;
-  const lastName = lastName.value;
-  const rut = rut.value;
+  const nameInput = document.getElementById('name');
+  const lastNameInput =  document.getElementById('lastName');
+  const rutInput = document.getElementById('rut');
+  const photo = document.getElementById('photo');
+ 
+ 
+  //variable con ruta agregar nuevo registro
+  const rutaReguster = firebase.database().ref().child(`registro`).push().key;
+  firebase.database().ref(`registro/${rutaReguster}`).set({
+    creator: currentUser.uid,
+    name: nameInput.value,
+    lastName: lastNameInput.value,
+    rut: rutInput.value
+  });
   name.value = '';
   lastName.value = '';
   rut.value = '';
-  //variable con ruta agregar nuevo registro
-  let newRegister = firebase
-  .database()
-  .ref()
-  .child("register")
-  .push().key;
-  //Aquí se muestra el contenido de cada registro
-  firebase
-  .database()
-  .ref(`register/${newRegister} `)
-  .set({
-    creator: currentUser.displayName,
-    name: name,
-    lastName: lastName,
-    rut: rut
-  });
-}
-
-// En esta constante se imprimen los nuevos registro en html
-const printRegister = register =>{
-
-}
+ };
