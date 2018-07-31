@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LOG</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/5.3.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/5.3.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/5.3.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/5.3.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/5.3.0/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-    <script src="https://cdn.firebase.com/libs/firebaseui/3.2.0/firebaseui.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/signup.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LOG</title>
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/5.3.0/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/5.3.0/firebase-auth.js"></script>
+  <script defer src="/__/firebase/5.3.0/firebase-database.js"></script>
+  <script defer src="/__/firebase/5.3.0/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/5.3.0/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.2.0/firebaseui.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/signup.js"></script>
+  <!-- link script boostrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.min.js?h=a956092e47060f3a4df307fed239128f"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.2.0/firebaseui.css" />
+  <!-- link css bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- link css propio -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-    <!-- link script boostrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.min.js?h=a956092e47060f3a4df307fed239128f"></script>
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.2.0/firebaseui.css" />
-    <!-- link css bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- link css propio -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    
-  </head>
-  <body>
-    <div id="firebaseui-auth-container"></div>
-    <div id="userData"></div>
+<body>
+  <div id="firebaseui-auth-container"></div>
+  <div id="userData"></div>
 
   <!-- seccion donde debe ir pagina splash -->
   <section id="splash">
 
-  
+
 
   </section>
   <!-- seccion donde debe ir pagina de inicio(botones de Administrador/Recepcion/Empresa) -->
@@ -72,14 +71,14 @@
         <div class="row">
           <div class="col-md-12 divadministracion">
             <button class="btn btn-dark btn-lg btnadministracion" type="button" data-bs-hover-animate="pulse">
-            <i class="fa fa-users"></i>
-            <strong>Administración</strong>
-          </button>
+              <i class="fa fa-users"></i>
+              <strong>Administración</strong>
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="btn-group" role="group"></div>
+    <div class="btn-group" role="group"></div>
   </section>
 
   <!-- seccion de signup -->
@@ -128,8 +127,7 @@
                 <div class="form-group">
                   <label>Oficina</label>
                   <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"
-                      style="background-color:#222222;width:100%;">OFICINA</button>
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" style="background-color:#222222;width:100%;">OFICINA</button>
                     <div class="dropdown-menu" role="menu">
                       <a class="dropdown-item">LABORATORIA</a>
                     </div>
@@ -212,5 +210,6 @@
         </div>
       </div>
     </div>
-  </body>
+</body>
+
 </html>
