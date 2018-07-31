@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('userData').innerHTML='Bienvenid@ ' + user.displayName + ' <a href="#" onClick="signOut()">Cerrar Sesion</a>';
 
     }else{
+      hideAll();
       document.getElementById('menuPage').style.display = 'none'
       document.getElementById('userData').innerHTML='';// para limpiar al deslogearse
       login();
