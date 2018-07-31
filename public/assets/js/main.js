@@ -5,8 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
   firebase.auth().onAuthStateChanged((user)=> {
     if (user) {
       console.log(user);
-      document.getElementById('userData').innerHTML='Hola' + user.displayName + '<a href="#" onClick="signOut()">Cerrar Sesion</a>';
+      hideAll();
+      document.getElementById('menuPage').style.display = 'block';
+      document.getElementById('userData').innerHTML='Bienvenid@ ' + user.displayName + ' <a href="#" onClick="signOut()">Cerrar Sesion</a>';
+
     }else{
+      document.getElementById('menuPage').style.display = 'none'
       document.getElementById('userData').innerHTML='';// para limpiar al deslogearse
       login();
     }
@@ -14,4 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
 } catch (e) {
   console.error(e);
 }
+
+  addListenerToClass('btnrecepcion', showRegister);
+  addListenerToClass('btnoficina', showAdmission);
+  addListenerToClass('btnadministracion', showAdministrador);
 });
+
