@@ -1,1 +1,0 @@
-//regista las visitas
