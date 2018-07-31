@@ -1,9 +1,13 @@
 //regista las visitas
-const name = name.value;
-const lastName = lastName.value;
-const rut = rut.value;
 
 window.register = ()=>{
+  const currentUser = firebase.auth().currentUser;
+  const name = name.value;
+  const lastName = lastName.value;
+  const rut = rut.value;
+  name.value = '';
+  lastName.value = '';
+  rut.value = '';
   //variable con ruta agregar nuevo registro
   let newRegister = firebase
   .database()
@@ -15,6 +19,7 @@ window.register = ()=>{
   .database()
   .ref(`register/${newRegister} `)
   .set({
+    creator: currentUser.displayName,
     name: name,
     lastName: lastName,
     rut: rut
