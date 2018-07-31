@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     firebase.auth().onAuthStateChanged((user)=> {
       if (user) {
         console.log(user);
-        hideAll();
+        
         document.getElementById('menuPage').style.display = 'block';
         document.getElementById('userData').innerHTML='Bienvenid@ ' + user.displayName + ' <a href="#" onClick="signOut()">Cerrar Sesion</a>';
       }else{
