@@ -8,7 +8,7 @@
 .no-marging{
   margin:0;
 }
-.alert-col>.alert.display{
+.alert-col .alert.display{
   opacity:1
 }
 .container.profile{
@@ -73,8 +73,7 @@ h1{
   background-color:#222222;
   width:100%;
   max-height:85px;
-  min-height:0px;
-  height:99px;
+  
   color:#ffffff;
 }
 .divoficina{
@@ -107,4 +106,27 @@ h1{
 /*pagina de Empresa/usuario-Administrador/usuario*/
 h2{
   padding:40px;
+}
+
+/* splash */
+
+#splash{
+  background-color: black;
+  
+}
+
+h3{
+  color:rgb(247,248,249);
+  font-family:Allan, cursive;
+  margin-top:290px;
+}
+
+p{
+  color: #ffffff;
+}
+
+h3{
+  font-family:Allan,;
+  margin-top:290px;
+  margin-bottom: 150px;
 }
