@@ -1,5 +1,4 @@
 //regista las visitas
-
 const progessRegister = () => {
   const currentUser = firebase.auth().currentUser;
   const nameInput = document.getElementById('name');
