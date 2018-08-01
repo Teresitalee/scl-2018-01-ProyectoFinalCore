@@ -1,32 +1,36 @@
 //regista las visitas
-
-window.register = ()=>{
+const progessRegister = () => {
   const currentUser = firebase.auth().currentUser;
-  const name = name.value;
-  const lastName = lastName.value;
-  const rut = rut.value;
-  name.value = '';
+  const nameInput = document.getElementById('name');
+  const lastNameInput =  document.getElementById('lastName');
+  const rutInput = document.getElementById('rut');
+  const photo = document.getElementById('photo');
+ 
+  //variable con ruta agregar nuevo registro
+  const rutaRegistro = firebase.database().ref().child(`registro`).push().key;
+  firebase.database().ref(`registro/${rutaRegistro}`).set({
+    creator: currentUser.uid,
+    name: nameInput.value,
+    lastName: lastNameInput.value,
+    rut: rutInput.value
+  });
+  nameInput.value = '';
   lastName.value = '';
   rut.value = '';
-  //variable con ruta agregar nuevo registro
-  let newRegister = firebase
-  .database()
-  .ref()
-  .child("register")
-  .push().key;
-  //Aquí se muestra el contenido de cada registro
-  firebase
-  .database()
-  .ref(`register/${newRegister} `)
-  .set({
-    creator: currentUser.displayName,
-    name: name,
-    lastName: lastName,
-    rut: rut
-  });
-}
+ };
 
-// En esta constante se imprimen los nuevos registro en html
-const printRegister = register =>{
+ const drawRegister = (snapshot)=>{
+  let printRegister =+ '';
+  Object.entries(snapshot.val()).forEach((registro) => {
+    console.log(registro);
+    printRegister = `
+    <tr>
+    <th> ${registro[1].name}</th>
+    <th> ${registro[1].lastName}</th>
+    <th> ${registro[1].rut}</th>
+    </tr>
+    ` + printRegister;
+ });
+ document.getElementById('printRegister').innerHTML = printRegister;
+};
 
-}
