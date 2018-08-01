@@ -18,8 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
     console.error(e);
   }
   
+  document.getElementById('btnRegistro').addEventListener('click',progessRegister );
   addListenerToClass('btnrecepcion', showRegister);
   addListenerToClass('btnoficina', showAdmission);
   addListenerToClass('btnadministracion', showAdministrador);
+  firebase.database().ref('/registro').on('value', drawRegister);
 });
 
