@@ -22,6 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
   addListenerToClass('btnrecepcion', showRegister);
   addListenerToClass('btnoficina', showAdmission);
   addListenerToClass('btnadministracion', showAdministrador);
-  firebase.database().ref("/registro").on('value', drawRegister);
+  firebase.database().ref('/registro').on('value', drawRegister);
 });
 

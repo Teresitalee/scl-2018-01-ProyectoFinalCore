@@ -7,7 +7,6 @@ const progessRegister = () => {
   const rutInput = document.getElementById('rut');
   const photo = document.getElementById('photo');
  
- 
   //variable con ruta agregar nuevo registro
   const rutaRegistro = firebase.database().ref().child(`registro`).push().key;
   firebase.database().ref(`registro/${rutaRegistro}`).set({
@@ -21,16 +20,17 @@ const progessRegister = () => {
   rut.value = '';
  };
 
- const drawRegister = ()=>{
-  let printRegister = document.getElementsByClassName('printRegister'); 
-  printRegister.innerHTML = '';
-  Object.entries(registro.val()).forEach((registro) => {
-    printRegister.innerHTML += `
- 
-    <p> ${registro[1].name}</p>
-    <p> ${registro[1].lastName}</p>
-    <p> ${registro[1].rut}</p>
-    
-    `;
- }); 
+ const drawRegister = (snapshot)=>{
+  let printRegister =+ '';
+  Object.entries(snapshot.val()).forEach((registro) => {
+    console.log(registro);
+    printRegister = `
+    <tr>
+    <th> ${registro[1].name}</th>
+    <th> ${registro[1].lastName}</th>
+    <th> ${registro[1].rut}</th>
+    </tr>
+    ` + printRegister;
+ });
+ document.getElementById('printRegister').innerHTML = printRegister;
 };
