@@ -1,4 +1,5 @@
 //regista las visitas
+
 const progessRegister = () => {
   const currentUser = firebase.auth().currentUser;
   const nameInput = document.getElementById('name');
@@ -8,14 +9,28 @@ const progessRegister = () => {
  
  
   //variable con ruta agregar nuevo registro
-  const rutaReguster = firebase.database().ref().child(`registro`).push().key;
-  firebase.database().ref(`registro/${rutaReguster}`).set({
+  const rutaRegistro = firebase.database().ref().child(`registro`).push().key;
+  firebase.database().ref(`registro/${rutaRegistro}`).set({
     creator: currentUser.uid,
     name: nameInput.value,
     lastName: lastNameInput.value,
     rut: rutInput.value
   });
-  name.value = '';
+  nameInput.value = '';
   lastName.value = '';
   rut.value = '';
  };
+
+ const drawRegister = ()=>{
+  let printRegister = document.getElementsByClassName('printRegister'); 
+  printRegister.innerHTML = '';
+  Object.entries(registro.val()).forEach((registro) => {
+    printRegister.innerHTML += `
+ 
+    <p> ${registro[1].name}</p>
+    <p> ${registro[1].lastName}</p>
+    <p> ${registro[1].rut}</p>
+    
+    `;
+ }); 
+};

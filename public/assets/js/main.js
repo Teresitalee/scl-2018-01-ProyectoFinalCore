@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
   } catch (e) {
     console.error(e);
   }
-  //Evento click para ruta de registro
+  
   document.getElementById('btnRegistro').addEventListener('click',progessRegister );
-
   addListenerToClass('btnrecepcion', showRegister);
   addListenerToClass('btnoficina', showAdmission);
   addListenerToClass('btnadministracion', showAdministrador);
+  firebase.database().ref("/registro").on('value', drawRegister);
 });
 
