@@ -1,13 +1,17 @@
-const numberInput = document.getElementById('number'),
-textInput = document.getElementById('msg'),
-button = document.getElementById('button'),
-response = document.querySelector('.response');
+// los elementos del DOM
 
-button.addEventListener('click',send,false);
+const numberInput = document.getElementById('number'), // obtener el Numero
+textInput = document.getElementById('msg'),// obtengo el mensaje
+button = document.getElementById('button'),// obtengo el boton
+response = document.querySelector('.response'); //traer toda la interfaz del usuario (respuesta)
+
+button.addEventListener('click',send,false); // llamado al clcik cuando se enviar
 
 function send() {
 const number = numberInput.nodeValue.replace(/\D/g,'');
 const text = textInput.value;
+
+// aca entramos a las promesas de solicitud de la API
 
 fetch(' /' , {
     method: 'post',
